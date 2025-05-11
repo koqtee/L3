@@ -1,0 +1,83 @@
+.str4 {
+    display: flex;
+    flex-direction: column;
+  width: 100vw;
+  background-color: #1a1f25;
+  max-width: 1920px;
+  color: #fff;
+  align-items: center;
+  min-height: 949px;
+}
+.chto {
+  width: 498px;
+  font-size: 48px;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: #fff;
+  text-align: center;
+  margin-top: 91px;
+  margin-bottom: 81px;
+}
+.tabl {
+    display: grid;
+   grid-template-columns: repeat(5, 242px);
+justify-content: center;
+align-items: center;
+margin: 0;
+grid-gap: 1px;
+background-color: #595959;
+}
+.tablicon {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    margin:45px 0 20px 1px;
+}
+ .seo {
+    text-align: center;
+    font-size: 16px;
+line-height: 150%;
+font-size: 16px;
+line-height: 150%;
+font-weight: 450;
+font-family: Montserrat;
+    width: 203px;
+    height: 48px;
+    margin: 21px 21px 45px 20px;
+ } 
+ .blank {
+    width: 243px;
+    height: 210px;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+ }
+ .podrobnee {
+    width: 185px;
+    position: relative;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 29px;
+    gap: 0px;
+    font-size: 16px;
+    color: #fff;
+    font-family: Montserrat;
+ }
+
+.par {
+    margin: 0;
+}
+
+ .ya {background-color: #1a1f25;
+    
+ }
+.ya11 {
+background-color: #1a1f25;
+    
+}
+

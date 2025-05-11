@@ -1,0 +1,65 @@
+.str2 {
+    background-color: #f1f1f1;
+    font-family: Montserrat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+}
+
+.comp {
+    width: 100%;
+    height: max-content;
+    display: block;
+    margin: 0%;
+}
+
+.company {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 391px;
+    text-align: right;
+    margin-bottom: 273px ;
+    margin-top: auto;
+
+}
+
+.txtstr2 {
+    display: flex;
+    margin-left: 107px;
+
+}
+.zag1 {
+    font-size: 48px;
+  	font-weight: 500;
+  	color: #000;
+    margin: 0;
+    margin-bottom: 61px;
+}
+
+.text1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    min-height: 272px;
+}
+.t1 {
+    line-height: 150%;
+    font-weight: 500;
+    color: #606060;
+    margin: 0;
+}
+
+.scroll1 {
+    max-width: max-content;
+    max-height: max-content;
+    margin-left: 200px;
+    margin-right: 138px;
+    margin-top: 112px;
+    margin-bottom: auto;
+}
+

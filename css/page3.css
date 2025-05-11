@@ -1,0 +1,70 @@
+.str3 {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    height: 983px;
+    overflow: hidden;
+}
+
+.backg {
+    position: absolute;
+    justify-self: center;
+    max-width: 1214px;
+    max-height: 765px;
+    margin: 0;
+}  
+
+.portfolio {
+    align-self: center;
+  	font-size: 48px;
+  	font-weight: 500;
+  	text-align: center;
+    margin: 91px 0 70px 0;
+}
+
+
+.computer {
+    display: flex;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 353px;
+}
+
+.scroll2 {
+    position: relative;
+    max-width: max-content;
+    max-height: max-content;
+    margin: 209px 138px 390px 0px;
+}
+.str2, .computer {
+    max-width: 100vw;
+    flex-wrap: nowrap;
+}
+
+
+.site {
+    width: 229px;
+    position: relative;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 29px;
+    gap: 0px;
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    font-family: Montserrat;
+    margin-top: 209px;
+    margin-left: auto;
+    margin-right: 267px; 
+
+font-size: 16px;
+font-weight: 500;
+
+}

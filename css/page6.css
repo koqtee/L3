@@ -1,0 +1,168 @@
+.str6 {
+  display: grid;
+  grid-template-columns: 935px 985px;
+}
+.zayavka {
+  background-image: url(building.png);
+}
+
+.zayav {
+  width: 175px;
+  position: relative;
+  font-size: 48px;
+  font-weight: 410;
+  font-family: Montserrat;
+  color: #fff;
+  text-align: left;
+  display: block;
+  margin: 174px auto 0px 354px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 81px 0 80px 353px;
+}
+.form {
+  position: relative;
+  font-size: 16px;
+  font-weight: 499;
+  font-family: Montserrat;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+}
+.input {
+  width: 509px;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 41px;
+  font-size: 16px;
+  outline: none;
+  font-family: Montserrat;
+}
+.input[type="soobshenie"] {
+  padding: 40px 0;
+  margin: 0;
+}
+.otpravit {
+  width: 193px;
+  position: relative;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 29px;
+  gap: 0px;
+  font-size: 16px;
+  color: #fff;
+  font-family: Montserrat;
+  margin-left: 353px;
+  margin-bottom: 173px;
+}
+
+.predlozh {
+  max-height: 940px;
+  background-color: #000000;
+}
+.spectext {
+  width: 497px;
+  position: relative;
+  font-size: 48px;
+  font-weight: 430;
+  font-family: Montserrat;
+  color: #fff;
+  text-align: right;
+  display: inline-block;
+  margin: 174px 0 0 135px;
+}
+
+.tabl3 {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 194px);
+  grid-template-rows: 284px;
+  column-gap: 10px;
+  margin-left: 30px;
+  margin-top: 138px;
+  max-height: 284px;
+}
+.yach {
+  border:1px solid #fff;
+}
+.yach1 {
+  background: linear-gradient(to top, #074D88, #61B3C9);
+  padding-left: 1px;
+  padding-top: 1px;
+}
+.top {
+  margin: 58px 0 15px 14px;
+width: 142px;
+position: relative;
+font-size: 20px;
+font-weight: 500;
+font-family: Montserrat;
+color: #fff;
+text-align: left;
+display: inline-block;
+
+}
+.central {
+  margin: 1px 0 0 14px;
+width: 163px;
+  line-height: 1.25;
+font-size: 16px;
+font-family: Montserrat;
+color: #e8e8e8;
+text-align: left;
+
+}
+.notenge {
+
+width: 69px;
+position: relative;
+font-size: 14px;
+text-decoration: line-through;
+font-weight: 500;
+font-family: Montserrat;
+color: #fff;
+text-align: left;
+display: inline-block;
+margin: 43px 0 5px 14px;
+}
+.tenge {
+margin: 0;
+width: 117px;
+position: relative;
+font-size: 24px;
+font-weight: 500;
+font-family: Montserrat;
+color: #fff;
+text-align: left;
+display: inline-block;
+margin-left: 14px;
+}
+.ellipse {
+  width: 76px;
+  height: 37px;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  border-radius:0 0 100px 100px;
+  border: 1px solid #fff;
+  border-top: 1px solid #000000;;
+}
+.ellipse1 {
+  width: 78px;
+  height: 38px;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  border-radius:0 0 100px 100px;
+  border-top: 1px solid #000000;;
+}

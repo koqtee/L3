@@ -1,0 +1,49 @@
+.lamps {
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    object-fit: cover;
+}
+.preim {
+width: 538px;
+position: relative;
+font-size: 48px;
+font-weight: 500;
+font-family: Montserrat;
+color: #000;
+text-align: right;
+margin: 337px 0 0 353px;
+}
+.str5 {
+    display: flex;
+}
+.tabl2 {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    margin: 90px 0 208px 353px;
+    grid-column-gap: 112px;
+    grid-row-gap: 37px;
+}
+.icon {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.punkt {
+    display: flex;
+}
+.punktext {
+width: 430px;
+position: relative;
+font-size: 16px;
+line-height: 150%;
+font-weight: 500;
+font-family: Montserrat;
+color: #1a1f25;
+text-align: left;
+display: inline-block;
+margin: 0;
+}
+
