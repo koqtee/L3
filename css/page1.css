@@ -1,118 +1,222 @@
 body {
-    overflow-y: auto;
-    -ms-overflow-style: none;  
-    scrollbar-width: none; 
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {
-    display: none; 
+  display: none;
 }
 
-  body{
-    display: flex;
-    font-family: Montserrat;
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
-    flex-direction: column;
-  }
+body {
+  display: flex;
+  font-family: Montserrat;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  flex-direction: column;
+}
 
 .child {
-    width: 100%;
-    position: absolute;
-    overflow: hidden;
-    height: 1030px;
-    object-fit: cover;
-}  
-
-.row{
-    position: relative;
-    display: flex;
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  height: 1030px;
+  object-fit: cover;
 }
 
-.logo1{
-    margin-top: 26px;
-    margin-left: 353px;
+.row {
+  position: relative;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
 }
-.logo2{
-    margin-top: 26px;
-    margin-left: 15px;
-    padding: 0%;
+
+.logo1 {
+  margin-top: 26px;
+  margin-left: 353px;
+}
+.logo2 {
+  margin-top: 26px;
+  margin-left: 15px;
+  padding: 0%;
 }
 
 .menu {
-    height: 30px;
-    width: 30px;
-    margin-top: 35px;
-    margin-left:  auto;
-    margin-right: 353px;
+  height: 30px;
+  width: 30px;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: 353px;
 }
 
 .web {
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-    max-width: 765px;
-    width: auto;
-    height: 132px;
-    margin-top: 175px;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 765px;
+  width: auto;
+  height: 132px;
+  margin-top: 175px;
 }
 
 .web-applications {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    text-transform: uppercase;
-    font-size: 74px;
-    margin: 0;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  text-transform: uppercase;
+  font-size: 74px;
+  margin: 0;
 }
 
 .povs {
-    position: relative;
-    top: 19px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    color: #000;
-    margin: 0;
+  position: relative;
+  top: 19px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
 }
 
 .group {
-    position: relative;
-    align-self: center;
-    justify-self: center;
-    border: 1px solid #000;
-    box-sizing: border-box;
-    width: 280px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 29px;
-    gap: 0px;
-    font-size: 16px;
-    color: #000;
-    margin-top: 60px;
-    margin-bottom: 528px;
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 280px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 29px;
+  gap: 0px;
+  font-size: 16px;
+  color: #000;
+  margin-top: 60px;
+  margin-bottom: 528px;
 }
 
 .spec {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .right-arrow-1-1 {
-    position: relative;
-    width: 12px;
-    height: 12px;
-    overflow: hidden;
-    flex-shrink: 0;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.right-arrow-1-1 {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
+@media (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+    font-size: 14px;
+    max-width: 319px;
+  }
 
+  .logo1,
+  .logo2 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 
+  .menu {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+  }
+
+  .web {
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+
+  .web-applications {
+    font-size: 30px !important;
+  }
+
+  .povs {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .group {
+    width: 100%;
+    max-width: 200px;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .spec {
+    font-size: 14px;
+  }
+
+  .right-arrow-1-1 {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+    width: 768px;
+  }
+  .child {
+    height: 100vh;
+  }
+
+  .logo1 {
+    margin-left: 20px;
+  }
+
+  .logo2 {
+    margin-left: 10px;
+  }
+
+  .menu {
+    margin-right: 20px;
+  }
+
+  .web {
+    margin-top: 100px;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .web-applications {
+    font-size: 42px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .povs {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .group {
+    width: 240px;
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 40vh;
+    padding: 10px 20px;
+  }
+}
