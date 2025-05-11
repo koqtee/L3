@@ -3,7 +3,7 @@
   grid-template-columns: 935px 985px;
 }
 .zayavka {
-  background-image: url(building.png);
+  background-image: url(../assets/building.png);
 }
 
 .zayav {
