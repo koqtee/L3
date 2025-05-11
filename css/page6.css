@@ -95,74 +95,157 @@
   max-height: 284px;
 }
 .yach {
-  border:1px solid #fff;
+  border: 1px solid #fff;
 }
 .yach1 {
-  background: linear-gradient(to top, #074D88, #61B3C9);
+  background: linear-gradient(to top, #074d88, #61b3c9);
   padding-left: 1px;
   padding-top: 1px;
 }
 .top {
   margin: 58px 0 15px 14px;
-width: 142px;
-position: relative;
-font-size: 20px;
-font-weight: 500;
-font-family: Montserrat;
-color: #fff;
-text-align: left;
-display: inline-block;
-
+  width: 142px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
 }
 .central {
   margin: 1px 0 0 14px;
-width: 163px;
+  width: 163px;
   line-height: 1.25;
-font-size: 16px;
-font-family: Montserrat;
-color: #e8e8e8;
-text-align: left;
-
+  font-size: 16px;
+  font-family: Montserrat;
+  color: #e8e8e8;
+  text-align: left;
 }
 .notenge {
-
-width: 69px;
-position: relative;
-font-size: 14px;
-text-decoration: line-through;
-font-weight: 500;
-font-family: Montserrat;
-color: #fff;
-text-align: left;
-display: inline-block;
-margin: 43px 0 5px 14px;
+  width: 69px;
+  position: relative;
+  font-size: 14px;
+  text-decoration: line-through;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  margin: 43px 0 5px 14px;
 }
 .tenge {
-margin: 0;
-width: 117px;
-position: relative;
-font-size: 24px;
-font-weight: 500;
-font-family: Montserrat;
-color: #fff;
-text-align: left;
-display: inline-block;
-margin-left: 14px;
+  margin: 0;
+  width: 117px;
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  margin-left: 14px;
 }
 .ellipse {
   width: 76px;
   height: 37px;
   position: absolute;
   background-color: rgb(0, 0, 0);
-  border-radius:0 0 100px 100px;
+  border-radius: 0 0 100px 100px;
   border: 1px solid #fff;
-  border-top: 1px solid #000000;;
+  border-top: 1px solid #000000;
 }
 .ellipse1 {
   width: 78px;
   height: 38px;
   position: absolute;
   background-color: rgb(0, 0, 0);
-  border-radius:0 0 100px 100px;
-  border-top: 1px solid #000000;;
+  border-radius: 0 0 100px 100px;
+  border-top: 1px solid #000000;
+}
+
+@media (max-width: 768px) {
+  .str6 {
+    grid-template-columns: 1fr; /* Change to a single-column layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-container {
+    margin: 81px 0 80px 150px;
+  }
+  .zayavka {
+    background-image: url(../assets/building.png);
+    width: 768px;
+  }
+  .predlozh {
+    width: 768px;
+  }
+  .tabl3 {
+    margin: 50px 0 50px 70px;
+  }
+}
+
+@media (max-width: 320px) {
+  .form-container {
+    margin: 81px 0 80px 100px;
+  }
+  .zayavka {
+    background-image: url(../assets/building.png);
+    width: 320px;
+  }
+  .predlozh {
+    width: 320px;
+    height: 100vh;
+  }
+  .tabl3 {
+    margin: 50px 0 50px 70px;
+  }
+  .input {
+    width: 150px;
+  }
+  .zayav {
+    margin-left: 100px;
+  }
+  .otpravit {
+    margin-left: 100px;
+  }
+  .tabl3 {
+    grid-template-columns: repeat(1, 200px);
+    grid-template-rows: 200px;
+    row-gap: 10px;
+  }
+  .yach {
+    height: 200px;
+  }
+  .yach1 {
+    height: 200px;
+  }
+  .top {
+    margin: 0 0 10px 0;
+  }
+  .central {
+    margin: 0 0 10px 0;
+  }
+  .tenge {
+    margin: 0 0 10px 0 !important;
+  }
+  .notenge {
+    margin: 0 0 10px 0;
+  }
+  .ellipse {
+    height: 0;
+    width: 0;
+  }
+
+  .ellipse1 {
+    height: 0;
+    width: 0;
+  }
+  .spectext {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 30px !important;
+    text-align: start;
+  }
 }
