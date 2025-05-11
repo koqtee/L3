@@ -1,49 +1,120 @@
 .lamps {
-    position: absolute;
-    overflow: hidden;
-    margin: 0;
-    object-fit: cover;
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  object-fit: cover;
 }
 .preim {
-width: 538px;
-position: relative;
-font-size: 48px;
-font-weight: 500;
-font-family: Montserrat;
-color: #000;
-text-align: right;
-margin: 337px 0 0 353px;
+  width: 538px;
+  position: relative;
+  font-size: 48px;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: #000;
+  text-align: right;
+  margin: 337px 0 0 353px;
 }
 .str5 {
-    display: flex;
+  display: flex;
 }
 .tabl2 {
-    display: grid;
-    grid-template-columns: repeat(2, 500px);
-    margin: 90px 0 208px 353px;
-    grid-column-gap: 112px;
-    grid-row-gap: 37px;
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  margin: 90px 0 208px 353px;
+  grid-column-gap: 112px;
+  grid-row-gap: 37px;
 }
 .icon {
-    margin-right: 20px;
-    width: 50px;
-    height: 50px;
-    position: relative;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  position: relative;
 }
 
 .punkt {
-    display: flex;
+  display: flex;
 }
 .punktext {
-width: 430px;
-position: relative;
-font-size: 16px;
-line-height: 150%;
-font-weight: 500;
-font-family: Montserrat;
-color: #1a1f25;
-text-align: left;
-display: inline-block;
-margin: 0;
+  width: 430px;
+  position: relative;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: #1a1f25;
+  text-align: left;
+  display: inline-block;
+  margin: 0;
 }
 
+@media (max-width: 320px) {
+  .lamps {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .str5 {
+    width: 320px !important;
+  }
+  .punkt {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 10px 0 !important;
+  }
+  .preim {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    margin: 100px 0 20px 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .lamps {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .str5 {
+    width: 768px;
+  }
+  .preim {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    margin: 100px 0 40px 0;
+  }
+
+  .str5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabl2 {
+    grid-template-columns: repeat(1, 1fr); /* Switch to one column layout */
+    margin: 50px 0;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .punkt {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .punktext {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+}
