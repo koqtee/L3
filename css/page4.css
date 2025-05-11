@@ -1,6 +1,6 @@
 .str4 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   background-color: #1a1f25;
   max-width: 1920px;
@@ -19,65 +19,198 @@
   margin-bottom: 81px;
 }
 .tabl {
-    display: grid;
-   grid-template-columns: repeat(5, 242px);
-justify-content: center;
-align-items: center;
-margin: 0;
-grid-gap: 1px;
-background-color: #595959;
+  display: grid;
+  grid-template-columns: repeat(5, 242px);
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  grid-gap: 1px;
+  background-color: #595959;
 }
 .tablicon {
-    justify-self: center;
-    align-self: center;
-    display: flex;
-    margin:45px 0 20px 1px;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  margin: 45px 0 20px 1px;
 }
- .seo {
-    text-align: center;
-    font-size: 16px;
-line-height: 150%;
-font-size: 16px;
-line-height: 150%;
-font-weight: 450;
-font-family: Montserrat;
-    width: 203px;
-    height: 48px;
-    margin: 21px 21px 45px 20px;
- } 
- .blank {
-    width: 243px;
-    height: 210px;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
- }
- .podrobnee {
-    width: 185px;
-    position: relative;
-    border: 1px solid #fff;
-    box-sizing: border-box;
-    height: 55px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 13px 29px;
-    gap: 0px;
-    font-size: 16px;
-    color: #fff;
-    font-family: Montserrat;
- }
+.seo {
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 450;
+  font-family: Montserrat;
+  width: 203px;
+  height: 48px;
+  margin: 21px 21px 45px 20px;
+}
+.blank {
+  width: 243px;
+  height: 210px;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+.podrobnee {
+  width: 185px;
+  position: relative;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 29px;
+  gap: 0px;
+  font-size: 16px;
+  color: #fff;
+  font-family: Montserrat;
+}
 
 .par {
-    margin: 0;
+  margin: 0;
 }
 
- .ya {background-color: #1a1f25;
-    
- }
+.ya {
+  background-color: #1a1f25;
+}
+.ya23 {
+  background-color: #1a1f25;
+}
 .ya11 {
-background-color: #1a1f25;
-    
+  background-color: #1a1f25;
 }
 
+@media (max-width: 768px) {
+  .str4 {
+    height: 1000px;
+    padding: 0;
+    align-items: center;
+    width: 768px;
+  }
+
+  .chto {
+    width: 768px;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .tabl {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+
+    grid-gap: 0px;
+    background-color: #1a1f25;
+  }
+
+  .tablicon {
+    margin: 20px 0;
+  }
+
+  .seo {
+    font-size: 14px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .blank {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .ya11 {
+    grid-row-start: 8;
+  }
+  .ya12 {
+    grid-row-start: 6;
+  }
+  .ya13 {
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+  .ya14 {
+    grid-row-start: 6;
+  }
+  .ya15 {
+    grid-row-start: 8;
+  }
+
+  .podrobnee {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  .par {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .str4 {
+    height: auto;
+    padding: 0;
+    align-items: center;
+    width: 100%;
+  }
+
+  .chto {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .tablicon {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+  }
+  .tabl {
+    padding: 0;
+  }
+  .seo {
+    font-size: 12px;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    line-height: 130%;
+    margin: 8px;
+  }
+
+  .blank {
+    width: 200px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .podrobnee {
+    width: 160px;
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .par {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+
+  .ya,
+  .ya23,
+  .ya11,
+  .ya12,
+  .ya13,
+  .ya14,
+  .ya15 {
+    background-color: #1a1f25;
+    width: 150px;
+  }
+}
