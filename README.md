@@ -2,4 +2,4 @@
 
 https://koqtee.github.io/L3/
 
-n/ https://koqtee.github.io/L3/index2
+https://koqtee.github.io/L3/index2
