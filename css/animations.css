@@ -1,0 +1,160 @@
+.web {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 70%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.podrobnee,
+.site,
+.group,
+.otpravit,
+.yach,
+.punkt {
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.podrobnee:hover,
+.otpravit:hover
+ {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.8);
+}
+.punkt:hover, .menu:hover {
+    transform: scale(1.1, 1.1);
+}
+.group:hover,
+.site:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
+}
+.yach,
+.yach1 {
+  width: 100%;
+  height: 100%;
+  transition: height 0.2s ease-in, width 0.2s ease-in, margin-left 0.2s ease-in;
+}
+
+.yach:hover,
+.yach1:hover {
+  height: 274px;
+  margin-left: 10px;
+  width: 174px;
+}
+
+.ya:hover,
+.ya12:hover,
+.ya14:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: rgb(63, 63, 63);
+}
+
+.logo1 {
+  transition: transform 0.1s ease-in;
+}
+
+.logo1:active {
+  transform: rotate(2turn);
+}
+
+.group:active,
+.site:active {
+    background-color: rgb(72, 72, 72);
+  transition: background-color 0.3s ease-out;
+}
+.podrobnee:active,
+.otpravit:active {
+  background-color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease-out;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.18);
+  transition: 0.3s ease-in-out;
+}
+
+.ya:has(.tablicon:active),
+.ya12:has(.tablicon:active),
+.ya14:has(.tablicon:active) {
+  background-color: rgba(62, 62, 62, 0.474);
+  transition: background-color 0.1s ease-in;
+}
+
+
+.f3 {
+    display: inline;
+}
+
+.f3::after {
+  content: " ➜";
+  display: inline-block;
+   opacity: 0;
+  font-size: 12px;
+  padding-left: 10px;
+  transition: opacity 0.3s ease-in;
+}
+
+.f3:hover::after {
+  opacity: 1;
+}
+
+.f1 {
+  display: inline;
+}
+
+.f1::before {
+  content: "↓";
+  font-size: 16px;
+  margin-right: 2px;
+   display: inline;
+    transition: opacity 0.3s ease-in;
+    opacity: 0;
+}
+
+.f1:hover::before {
+  opacity: 1;
+}
+
+.logo1:active +  .logo2 {
+  transition: transform 0.1s ease-in;
+  transform: rotate(2turn);
+}
+.logo2:active {
+  transition: transform 0.1s ease-in;
+  transform: rotate(2turn);
+}
+
+.form:first-of-type:hover {
+  transform: scale(1, 1.1);
+  transition: transform 0.4s;
+}
+
+.t1:last-of-type {
+  transform: scale(1.1, 1.1);
+  transition: transform 0.4s;
+}
+
+.t1:last-of-type:hover {
+  transform: scale(1, 1);
+  transition: transform 0.4s;
+}
+
+.frame-parent:nth-child(2n):hover {
+transform: translateY(-10px) translateX(-5px);
+filter: drop-shadow(0px 3px 3px rgb(255, 255, 255));
+  transition: transform 0.2s ease-in-out;
+}
+.frame-parent:nth-child(2n+1):hover {
+transform: translateY(-10px) translateX(-5px);
+filter: drop-shadow(0px 3px 3px rgb(255, 156, 229));
+  transition: transform 0.2s ease-in-out;
+}
