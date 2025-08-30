@@ -21,7 +21,7 @@
     padding: 10px 15px;
     border: 2px solid #36405c;
     border-right: none;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
 
@@ -46,7 +46,7 @@
 .sort-controls select {
     padding: 10px 15px;
     border: 2px solid #282A30;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     background: white;
     cursor: pointer;
@@ -80,6 +80,7 @@
 }
 
 .product-card {
+    font-family: 'Montserrat';
     border: 1px solid #fff;
     background-color: #000000;
     border-radius: 0px;
@@ -192,6 +193,7 @@
 }
 
 .modal-content {
+    font-family: 'Montserrat';
     background-color: #fff;
     margin: 5% auto;
     padding: 30px;
@@ -199,6 +201,7 @@
     max-width: 800px;
     border-radius: 8px;
     position: relative;
+    color: #000;
 }
 
 .close {
@@ -214,7 +217,7 @@
     display: flex;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #000000;
 }
 
 .cart-item-image {
@@ -323,6 +326,6 @@
     .modal-content {
         width: 90%;
         margin: 10% auto;
+        color: #000;
     }
-
 }
