@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Nunito&family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style23.css">
+    <link rel="stylesheet" href="catalog23.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__logo">
+                    <a href="#">Digital Flow</a>
+                </div>
+                <div class="header__menu">
+                    <ul class="header__menu-list">
+                        <li><a href="index2.html">Главная</a></li>
+                        <li><a href="catalog23.html">Каталог</a></li>
+                        <li><a href="#" id="cart-link">Корзина (<span id="cart-count">0</span>)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Поиск товаров...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="sort-controls">
+                    <select id="sort-select">
+                        <option value="default">Сортировка</option>
+                        <option value="price-asc">Цена (по возрастанию)</option>
+                        <option value="price-desc">Цена (по убыванию)</option>
+                        <option value="name-asc">Название (А-Я)</option>
+                        <option value="name-desc">Название (Я-А)</option>
+                        <option value="rating-desc">Рейтинг (высокий)</option>
+                    </select>
+                    
+                    <select id="category-filter">
+                        <option value="all">Все категории</option>
+                        <!-- Категории будут добавлены через JS -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="array-methods">
+                <button data-method="all">Все товары</button>
+                <button data-method="filter-price">До 500$</button>
+                <button data-method="rating-4">Рейтинг 4</button>
+                <button data-method="rating-5">Рейтинг 5</button>
+                <button data-method="filter-new">Новинки</button>
+                <button data-method="filter-popular">Популярные</button>
+                <button data-method="filter-luxury">Премиум</button>
+                <button data-method="best-sellers">Лучшие продажи</button>
+                <button data-method="discounted">Со скидкой</button>
+            </div>
+
+            <div id="products-container" class="products-grid"></div>
+            
+            <div id="no-products" class="no-products">
+                <p>Товары не найдены. Попробуйте изменить критерии поиска.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <p>Итого: <span id="cart-total-price">0</span>$</p>
+                <button id="checkout-btn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="catalog23.js"></script>
+</body>
+</html>
