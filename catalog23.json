@@ -1,0 +1,227 @@
+{
+    "products" :[
+    {
+        "id": 1,
+        "name": "Сайт визитка",
+        "price": 150,
+        "category": "Сайт",
+        "rating": 4.5,
+        "isNew": true,
+        "isPopular": false,
+        "isDiscounted": true,
+        "image": "im4.png",
+        "description": "Сайт для личного представления"
+    },
+    {
+        "id": 2,
+        "name": "Браузерная игра",
+        "price": 220,
+        "category": "Приложение",
+        "rating": 4.2,
+        "isNew": true,
+        "isPopular": true,
+        "isDiscounted": false,
+        "image": "im2.png",
+        "description": "Простая браузерная игра"
+    },
+    {
+        "id": 3,
+        "name": "Приложение-пульт",
+        "price": 300,
+        "category": "Приложение",
+        "rating": 4.0,
+        "isNew": true,
+        "isPopular": false,
+        "isDiscounted": false,
+        "image": "im3.png",
+        "description": "Приложение для устройства"
+    },
+    {
+        "id": 4,
+        "name": "Игра на телефон",
+        "price": 1000,
+        "category": "Приложение",
+        "rating": 4.7,
+        "isNew": false,
+        "isPopular": true,
+        "isDiscounted": false,
+        "image": "im5.png",
+        "description": "Игра"
+    },
+    {
+        "id": 5,
+        "name": "Игра на компьтер",
+        "price": 2000,
+        "category": "Приложение",
+        "rating": 4.3,
+        "isNew": false,
+        "isPopular": false,
+        "isDiscounted": false,
+        "image": "im1.png",
+        "description": "Игра на компьтер"
+    },
+    {
+        "id": 6,
+        "name": "Сайт",
+        "price": 1200,
+        "category": "Сайт",
+        "rating": 4.8,
+        "isNew": false,
+        "isPopular": true,
+        "isDiscounted": false,
+        "image": "im6.png",
+        "description": "Любой сайт"
+    },
+    {
+        "id": 7,
+        "name": "Музыкальный бит",
+        "price": 350,
+        "category": "Другое",
+        "rating": 4.4,
+        "isNew": true,
+        "isPopular": false,
+        "isDiscounted": false,
+        "image": "im7.png",
+        "description": "Музыкальный бит"
+    },
+    {
+        "id": 8,
+        "name": "Монтаж видео",
+        "price": 200,
+        "category": "Услуга",
+        "rating": 4.1,
+        "isNew": true,
+        "isPopular": true,
+        "isDiscounted": false,
+        "image": "im8.png",
+        "description": "Монтаж"
+    },
+    {
+        "id": 9,
+        "name": "Обработка фото",
+        "price": 100,
+        "category": "Услуга",
+        "rating": 4.6,
+        "isNew": false,
+        "isPopular": true,
+        "isDiscounted": false,
+        "image": "im9.png",
+        "description": "Обработка фото"
+    },
+    {
+        "id": 10,
+        "name": "Сайт для предприятия",
+        "price": 500,
+        "category": "Сайт",
+        "rating": 4.5,
+        "isNew": false,
+        "isPopular": false,
+        "isDiscounted": true,
+        "image": "im10.png",
+        "description": "Сайт любой сложности"
+    },
+    {
+        "id": 11,
+        "name": "Копия игры",
+        "price": 1500,
+        "category": "Приложение",
+        "rating": 3.9,
+        "isNew": true,
+        "isPopular": true,
+        "isDiscounted": true,
+        "image": "im11.png",
+        "description": "Копия игры любой сложности"
+    },
+    {
+        "id": 12,
+        "name": "Реклама",
+        "price": 90,
+        "category": "Услуга",
+        "rating": 4.0,
+        "isNew": false,
+        "isPopular": false,
+        "isDiscounted": true,
+        "image": "im12.png",
+        "description": "Продвижение вашего продукта"
+    },
+    {
+        "id": 13,
+        "name": "Дизайн сайта",
+        "price": 210,
+        "category": "Другое",
+        "rating": 4.2,
+        "isNew": false,
+        "isPopular": true,
+        "isDiscounted": true,
+        "image": "im13.png",
+        "description": "Разработаем дизайн"
+    },
+    {
+        "id": 14,
+        "name": "Landing page",
+        "price": 280,
+        "category": "Сайт",
+        "rating": 4.3,
+        "isNew": false,
+        "isPopular": false,
+        "isDiscounted": true,
+        "image": "im14.png",
+        "description": "Продающая страница"
+    },
+    {
+        "id": 15,
+        "name": "Бизнес сайт",
+        "price": 700,
+        "category": "Сайт",
+        "rating": 4.4,
+        "isNew": false,
+        "isPopular": false,
+        "isDiscounted": true,
+        "image": "im15.png",
+        "description": "Корпоративный сайт"
+    }],
+    "users": [
+        {
+          "id": 1,
+          "role": "admin",
+          "phone": "+375291234567",
+          "email": "admin@example.com",
+          "password": "$2a$10$N9qo8uLOickgx2ZMRZoMy.MrUvZkg4.LFw7W.5UOJGz7sQw0zD7G",
+          "firstName": "Admin",
+          "lastName": "Adminov",
+          "birthDate": "1990-01-01",
+          "username": "Admin123",
+          "agreedToTerms": true,
+          "registrationDate": "2023-01-01"
+        }
+        
+      ],
+      "feedback": [
+        {
+          "id": 1,
+          "productId": 1,
+          "userId": 1,
+          "rating": 5,
+          "text": "Отличный товар!",
+          "date": "2023-05-15",
+          "status": "approved"
+        }
+      ],
+      "orders": [
+        {
+          "id": 1,
+          "userId": 1,
+          "items": [
+            {
+              "productId": 1,
+              "quantity": 2,
+              "price": 450
+            }
+          ],
+          "total": 900,
+          "date": "2023-05-10",
+          "status": "completed"
+        }],
+   "favorites": [],
+   "cart": []
+}
