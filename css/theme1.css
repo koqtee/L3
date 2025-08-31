@@ -1,0 +1,349 @@
+
+.header-controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.theme-switcher, .language-switcher {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.theme-label, .language-label {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Темная тема */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-theme .str2 {
+  background-color: #1e1e1e;
+}
+
+.dark-theme .t1 {
+  color: #b0b0b0;
+}
+
+.dark-theme .zag1,
+.dark-theme .portfolio,
+.dark-theme .preim,
+.dark-theme .punktext {
+  color: #ffffff;
+}
+
+.dark-theme .tabl2 {
+  color: #ffffff;
+}
+.dark-theme .theme-switcher, .dark-theme .language-switcher {
+  background-color: #052d4f;
+}
+
+.dark-theme .input {
+  border-bottom-color: #ffffff;
+  color: #ffffff;
+}
+
+.dark-theme .footer {
+  background-color: #0a0a0a;
+}
+
+.dark-theme .str4 {
+  background-color: #0f1215;
+}
+
+.dark-theme .ya {
+  background-color: #0f1215;
+}
+
+.dark-theme .ya12,
+.dark-theme .ya14 {
+  background-color: #0f1215;
+}
+
+.dark-theme .predlozh {
+  background-color: #121212;
+}
+
+.dark-theme .yach {
+  border-color: #444;
+}
+
+.dark-theme .form {
+  color: #ffffff;
+}
+
+/* Светлая тема */
+body:not(.dark-theme) {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .header-controls {
+    top: 10px;
+    left: 10px;
+    flex-direction: row;
+    gap: 5px;
+  }
+  
+  .theme-switcher, .language-switcher {
+    padding: 3px 8px;
+  }
+  
+  .switch {
+    width: 40px;
+    height: 20px;
+  }
+  
+  .slider:before {
+    height: 14px;
+    width: 14px;
+  }
+  
+  .theme-label, .language-label {
+    font-size: 10px;
+  }
+}
+/* Дополнительные стили для темной темы */
+.dark-theme .str5 {
+  background-color: #121212;
+}
+
+.dark-theme .lamps {
+  filter: brightness(0.6);
+}
+
+.dark-theme .punktext {
+  color: #e0e0e0;
+}
+
+.dark-theme .input {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.dark-theme .input::placeholder {
+  color: #b0b0b0;
+}
+
+.dark-theme .form {
+  color: #ffffff;
+}
+
+.dark-theme .yach {
+  background-color: #1a1a1a;
+  border-color: #444;
+}
+
+.dark-theme .yach1 {
+  background: linear-gradient(to top, #074d88, #61b3c9);
+}
+
+.dark-theme .top,
+.dark-theme .central,
+.dark-theme .notenge,
+.dark-theme .tenge {
+  color: #ffffff;
+}
+
+.dark-theme .spectext {
+  color: #ffffff;
+}
+
+.dark-theme .zayav {
+  color: #ffffff;
+}
+
+.dark-theme .burger-icon span {
+  background-color: #ffffff;
+}
+
+.dark-theme .povs {
+  color: #ffffff;
+}
+
+.dark-theme .spec {
+  color: #ffffff;
+}
+
+.dark-theme .play-btn {
+  background-color: #074d88;
+}
+
+.dark-theme .gallery-btn {
+  background-color: #074d88;
+}
+
+.dark-theme .parallax-layer-1 {
+  background: rgba(48, 48, 48, 0.9);
+}
+
+.dark-theme .parallax-layer-2 {
+  background: rgba(48, 48, 48, 0.9);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  position: relative;
+}
+
+.user-select {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.modal-buttons button {
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.user-name, .user-email {
+  font-family: Montserrat;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.login-btn, .logout-btn {
+  background: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover, .logout-btn:hover {
+  background: #0d8bf2;
+}
+
+.dark-theme .user-profile {
+  background: rgba(30, 30, 30, 0.8);
+  color: #ffffff;
+}
+
+.dark-theme .user-name, 
+.dark-theme .user-email {
+  color: #ffffff;
+}
+
+.dark-theme .login-btn,
+.dark-theme .logout-btn {
+  background: #444;
+  color: #fff;
+}
