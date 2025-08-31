@@ -216,19 +216,11 @@ body:not(.dark-theme) {
   color: #ffffff;
 }
 
+.dark-theme .web-applications {
+  color: #000;
+}
+
 .dark-theme .zayav {
-  color: #ffffff;
-}
-
-.dark-theme .burger-icon span {
-  background-color: #ffffff;
-}
-
-.dark-theme .povs {
-  color: #ffffff;
-}
-
-.dark-theme .spec {
   color: #ffffff;
 }
 
@@ -346,4 +338,5 @@ body:not(.dark-theme) {
 .dark-theme .logout-btn {
   background: #444;
   color: #fff;
+
 }
