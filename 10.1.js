@@ -3,26 +3,26 @@ const UserManager = {
     users: {},
 
     init() {
-        // Load users from localStorage
+        
         const savedUsers = localStorage.getItem('users');
         if (savedUsers) {
             this.users = JSON.parse(savedUsers);
         }
 
-        // Load last logged in user
+        
         const lastUser = localStorage.getItem('lastUser');
         if (lastUser && this.users[lastUser]) {
             this.login(this.users[lastUser]);
         } else {
-            // Apply default theme but keep current language
+            
             ThemeManager.applyTheme(false);
-            // Явно синхронизируем переключатель языка
+            
             const currentLang = document.documentElement.lang;
             document.getElementById('language-toggle').checked = currentLang === 'en';
             LanguageManager.updateLanguageLabel(currentLang === 'en');
         }
 
-        // Initialize event listeners
+        
         this.setupEventListeners();
     },
 
@@ -256,13 +256,9 @@ const LanguageManager = {
     ru: 'код',
     en: 'code'
   },
-  'Контекстная': {
-    ru: 'Контекстная ',
-    en: 'Contextual '
-  },
-    'реклама': {
-    ru: 'реклама',
-    en: 'advertising'
+  'Контекстная реклама': {
+    ru: 'Контекстная реклама',
+    en: 'Contextual advertising'
   },
   'Третированная реклама': {
     ru: 'Третированная реклама',
@@ -383,7 +379,71 @@ const LanguageManager = {
   'Выйти': {
     ru: 'Выйти',
     en: 'Logout'
-  }
+  },
+  'Город': {
+    ru: 'Город',
+    en: 'City'
+  },
+  'Океан': {
+    ru: 'Океан',
+    en: 'Ocean'
+  },
+  'Лес': {
+    ru: 'Лес',
+    en: 'Forest'
+  },
+  'Гроза': {
+    ru: 'Гроза',
+    en: 'Storm'
+  },
+  'Кофе': {
+    ru: 'Кофе',
+    en: 'Coffee'
+  },
+  'Поезд': {
+    ru: 'Поезд',
+    en: 'Train'
+  },
+  'Дождь': {
+    ru: 'Дождь',
+    en: 'Rain'
+  },
+  'Космос': {
+    ru: 'Космос',
+    en: 'Space'
+  },
+  'Кот': {
+    ru: 'Кот',
+    en: 'Cat'
+  },
+  'Фейерверк': {
+    ru: 'Фейерверк',
+    en: 'Fireworks'
+  },
+  'почему': {
+    ru: 'Почему мы?',
+    en: 'Why us?'
+  },
+  'компания': {
+    ru: 'Компания?',
+    en: 'Company?'
+  },
+  'нт': {
+    ru: 'Нет, мы большая семья',
+    en: 'No, we are a big family'
+  },
+  'доверяй': {
+    ru: 'Доверяй нам вы строите карьеру',
+    en: 'Trust us your career'
+  },
+  'Услуги': {
+    ru: 'Услуги',
+    en: 'Service'
+  },
+  'Преимущества': {
+    ru: 'Преимущества',
+    en: 'Advantages'
+  },
     },
 
 init() {
