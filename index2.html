@@ -3,6 +3,7 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="initial-scale=1, width=device-width" />
+      <link rel="stylesheet" href="css/theme1.css" />
       <link rel="stylesheet" href="css/style9.css" />
       <link rel="stylesheet" href="css/pluse.css" />
       <link rel="stylesheet" href="css/page1.css" />
@@ -33,139 +34,164 @@
     </div>
     <div class="burger-menu">
     <div class="burger-icon" id="burger-icon">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="spann"></span>
+        <span class="spann"></span>
+        <span class="spann"></span>
     </div>
     <div class="burger-nav" id="burger-nav">
-        <a href="#about">О компании</a>
-        <a href="#portfolio">Портфолио</a>
-        <a href="#services">Услуги</a>
-        <a href="#advantages">Преимущества</a>
-        <a href="#contact">Контакты</a>
+        <a href="#about" data-translate="О компании">О компании</a>
+        <a href="#portfolio" data-translate="Портфолио">Портфолио</a>
+        <a href="#services" data-translate="Услуги">Услуги</a>
+        <a href="#advantages" data-translate="Преимущества">Преимущества</a>
+        <a href="#contact" data-translate="Контакты">Контакты</a>
+        <div class="header-controls">
+            <div class="theme-switcher">
+              <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+              </label>
+              <span class="theme-label" data-translate="Темная тема">Темная тема</span>
+            </div>
+            <div class="language-switcher">
+              <label class="switch">
+                <input type="checkbox" id="language-toggle">
+                <span class="slider round"></span>
+              </label>
+              <span class="language-label" data-translate="English">English</span>
+            </div>
+         </div>
+         <div class="user-profile">
+      <div class="user-info">
+        <span class="user-name" data-translate="Гость">Гость</span>
+        <span class="user-email"></span>
+      </div>
+      <button class="logout-btn" style="display: none;" data-translate="Выйти">Выйти</button>
+      <button class="login-btn" data-translate="Войти">Войти</button>
+    </div>
+  </div>
     </div>
     <div class="burger-overlay" id="burger-overlay"></div>
 </div>
       <!-- sttranica 1 -->
-      <img class="child" alt="" src="assets/mainbg.png" />
+      <img class="child" alt="" src="mainbg.png" />
      <nav class="row">
-       <img class="logo1" alt="" src="assets/icon.svg" id="company-logo" />
-       <img class="logo2" alt="" src="assets/Vector.svg" />
+       <img class="logo1" alt="" src="icon.svg" id="company-logo" />
+       <img class="logo2" alt="" src="Vector.svg" />
      </nav>
       <article class="web">
          <p class="web-applications">web applications</p>
-         <p class="povs">Повседневная практика.</p>
+         <p class="povs" data-translate="Повседневная практика.">Повседневная практика.</p>
       </article>
-      <section class="group" onclick="window.location.href='catalog23.html'" style="cursor: pointer;">
-         <div class="spec">Спец предложение</div>
-         <img class="right-arrow-1-1" alt="" src="assets/right-arrow black.svg" />
+      <section class="group">
+         <div class="spec" data-translate="Спец предложение">Спец предложение</div>
+         <img class="right-arrow-1-1" alt="" src="right-arrow black.svg" />
       </section>
       <!-- STRANICA2 -->
       <article id="about" class="str2" style="flex-direction: row;">
-         <img class="comp" src="assets/comp.png" alt="">
+         <img class="comp" src="comp.png" alt="">
          <section class="company">
             <article class="txtstr2" style="flex-direction: column;">
-               <p class="zag1">О компании</p>
+               <p class="zag1" data-translate="О компании">О компании</p>
                <div class="text1" style="flex-direction: column;">
-                  <p class="t1">
+                  <p class="t1" data-translate="Мы диджитал агентство занимаемся полным циклом продвижения компаний в интернете.">
                      Мы диджитал агентство занимаемся полным циклом продвижения компаний
                      в интернете.
                   </p>
-                  <p class="t1">
+                  <p class="t1" data-translate="Разработка сайтов – Сделаем уникальный дизайн согласно вашему фирменному стилю. Напишем чистый код, без использования конструкторов.">
                      Разработка сайтов – Сделаем уникальный дизайн согласно вашему
                      фирменному стилю. Напишем чистый код, без использования
                      конструкторов.
                   </p>
-                  <p class="t1">
+                  <p class="t1" data-translate="Продвижение – поможем вам быстро добиться желаемого результата, обеспечим постоянный приток новых заявок.">
                      Продвижение – поможем вам быстро добиться желаемого результата,
                      обеспечим постоянный приток новых заявок.
                   </p>
                </div>
             </article>
-            <img class="scroll1" src="assets/скролл.svg" alt="">
+            <img class="scroll1" src="скролл.svg" alt="">
          </section>
       </article>
       <!-- Stranica3 -->
       <section id="portfolio" class="str3">
-         <p class="portfolio">
+         <p class="portfolio" data-translate="Портфолио">
             Портфолио
          </p>
          <section class="computer">
             <article>
-               <img class="backg" alt="" src="assets/computer background.png" />
+               <img class="backg" alt="" src="computer background.png" />
             </article>
             <div class="slider">
     <div class="slides">
-        <div class="slide active"><img src="assets/slide1.jpg" alt="Slide 1"></div>
-        <div class="slide"><img src="assets/slide2.jpg" alt="Slide 2"></div>
-        <div class="slide"><img src="assets/slide3.jpg" alt="Slide 3"></div>
+        <div class="slide active"><img src="slide1.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="slide2.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="slide3.jpg" alt="Slide 3"></div>
     </div>
     <button class="slider-prev">❮</button>
     <button class="slider-next">❯</button>
     <div class="slider-dots"></div>
    </div>
             <div class="site">
-               <p class="scale">Перейти на сайт </p>
-               <img class="right-arrow-1-1" alt="" src="assets/right-arrow black.svg" />
+               <p class="scale" data-translate="Перейти на сайт">Перейти на сайт </p>
+               <img class="right-arrow-1-1" alt="" src="right-arrow black.svg" />
             </div>
-            <img class="scroll2" src="assets/скролл.svg" alt="">
+            <img class="scroll2" src="скролл.svg" alt="">
          </section>
       </section>
       <!-- stranica 4 -->
       <section id="services" class="str4">
          <header class="chto">
-            <p style="margin: 0;">
+            <p style="margin: 0;" data-translate="Что мы предлагаем">
                Что мы предлагаем
             </p>
          </header>
          <section class="tabl">
             <div class="ya">
-               <img class="tablicon" alt="" src="assets/like.png" />
-               <p class="seo">Высокий уровень исполнения</p>
+               <img class="tablicon" alt="" src="like.png" />
+               <p class="seo" data-translate="Высокий уровень исполнения">Высокий уровень исполнения</p>
             </div>
             <div class="ya">
-               <img class="tablicon" alt="" src="assets/medal.png" />
-               <p class="seo">Гарантируем качество работы</p>
+               <img class="tablicon" alt="" src="medal.png" />
+               <p class="seo" data-translate="Гарантируем качество работы">Гарантируем качество работы</p>
             </div>
             <div class="ya">
-               <img class="tablicon" alt="" src="assets/watch.png" />
-               <p class="seo">Выполним работу быстро</p>
+               <img class="tablicon" alt="" src="watch.png" />
+               <p class="seo" data-translate="Выполним работу быстро">Выполним работу быстро</p>
             </div>
             <div class="ya">
-               <img class="tablicon" alt="" src="assets/gmail.png" />
-               <p class="seo">Обеспечим поток заявок</p>
+               <img class="tablicon" alt="" src="gmail.png" />
+               <p class="seo" data-translate="Обеспечим поток заявок">Обеспечим поток заявок</p>
             </div>
             <div class="ya">
-               <img class="tablicon" alt="" src="assets/settings.png" />
-               <p class="seo">Автоматизируем работу</p>
+               <img class="tablicon" alt="" src="settings.png" />
+               <p class="seo"data-translate="Автоматизируем работу">Автоматизируем работу</p>
             </div>
             <div class="ya">
-               <img class="tablicon" alt="" src="assets/paint.png" />
-               <p class="seo">Разработаем уникальный дизайн</p>
+               <img class="tablicon" alt="" src="paint.png" />
+               <p class="seo" data-translate="Разработаем уникальный дизайн">Разработаем уникальный дизайн</p>
             </div>
             <div class="ya">
-               <img class="tablicon" alt="" src="assets/window.png" />
+               <img class="tablicon" alt="" src="window.png" />
                <div class="seo">
-                  <p class="par">Напишем чистый </p>
-                  <p class="par">код</p>
+                  <p class="par" data-translate="Напишем чистый">Напишем чистый </p>
+                  <p class="par" data-translate="код">код</p>
                </div>
             </div>
             <div class="ya">
-               <img class="tablicon" alt="" src="assets/plane.png" />
+               <img class="tablicon" alt="" src="plane.png" />
                <div class="seo">
-                  <p class="par">Контекстная</p>
-                  <p class="par">реклама</p>
+                  <p class="par" data-translate="Контекстная">Контекстная</p>
+                  <p class="par" data-translate="реклама">реклама</p>
                </div>
             </div>
             <div class="ya">
-               <img class="tablicon" alt="" src="assets/horn.png" />
-               <p class="seo">Третированная реклама</p>
+               <img class="tablicon" alt="" src="horn.png" />
+               <p class="seo" data-translate="Третированная реклама">Третированная реклама</p>
             </div>
             <div class="ya">
-               <img class="tablicon" alt="" src="assets/graf.png" />
+               <img class="tablicon" alt="" src="graf.png" />
                <div class="seo">
-                  <p class="par">SEO</p>
-                  <p class="par">продвижение</p>
+                  <p class="par"data-translate="SEO">SEO</p>
+                  <p class="par"data-translate="продвижение">продвижение</p>
                </div>
             </div>
             <div class="ya11">
@@ -175,21 +201,21 @@
                </div>
             </div>
             <div class="ya12">
-               <img class="tablicon" alt="" src="assets/internet.png" />
-               <p class="seo">Продвижение в социальных сетях</p>
+               <img class="tablicon" alt="" src="internet.png" />
+               <p class="seo"data-translate="Продвижение в социальных сетях">Продвижение в социальных сетях</p>
             </div>
             <!-- STRELKA -->
             <div class="ya13">
                <div class="blank">
                   <div class="podrobnee">
-                     <div class="scale">Подробнее</div>
-                     <img class="right-arrow-1-1" alt="" src="assets/right-arrow white.svg" />
+                     <div class="scale" data-translate="Подробнее">Подробнее</div>
+                     <img class="right-arrow-1-1" alt="" src="right-arrow white.svg" />
                   </div>
                </div>
             </div>
             <div class="ya14">
-               <img class="tablicon" alt="" src="assets/medal.png" />
-               <p class="seo">Высокий уровень исполнения</p>
+               <img class="tablicon" alt="" src="medal.png" />
+               <p class="seo" data-translate="Высокий уровень исполнения">Высокий уровень исполнения</p>
             </div>
             <div class="ya15">
                <div class="blank">
@@ -206,29 +232,29 @@
     
     
     <div class="parallax-layer-1" id="layer1">
-      <h3>Компания?</h3>
-      <p>Нет, мы большая семья</p>
+      <h3 data-translate="компания">Компания?</h3>
+      <p data-translate="нт">Нет, мы большая семья</p>
     </div>
     
     
     <div class="parallax-layer-2" id="layer2">
-      <h3>Почему мы?</h3>
-      <p>Доверяй нам вы строите карьеру</p>
+      <h3 data-translate="почему">Почему мы?</h3>
+      <p data-translate="доверяй">Доверяй нам вы строите карьеру</p>
     </div>
   </div>
   
 <div class="media-gallery">
     <div class="gallery-controls">
-        <button class="gallery-btn" data-effect="city">Город</button>
-        <button class="gallery-btn" data-effect="ocean">Океан</button>
-        <button class="gallery-btn" data-effect="forest">Лес</button>
-        <button class="gallery-btn" data-effect="storm">Гроза</button>
-        <button class="gallery-btn" data-effect="coffee">Кофе</button>
-        <button class="gallery-btn" data-effect="train">Поезд</button>
-        <button class="gallery-btn" data-effect="rain">Дождь</button>
-        <button class="gallery-btn" data-effect="space">Космос</button>
-        <button class="gallery-btn" data-effect="cat">Кот</button>
-        <button class="gallery-btn" data-effect="fireworks">Фейерверк</button>
+        <button class="gallery-btn" data-effect="city" data-translate="Город">Город</button>
+        <button class="gallery-btn" data-effect="ocean" data-translate="Океан">Океан</button>
+        <button class="gallery-btn" data-effect="forest" data-translate="Лес">Лес</button>
+        <button class="gallery-btn" data-effect="storm" data-translate="Гроза">Гроза</button>
+        <button class="gallery-btn" data-effect="coffee" data-translate="Кофе">Кофе</button>
+        <button class="gallery-btn" data-effect="train" data-translate="Поезд">Поезд</button>
+        <button class="gallery-btn" data-effect="rain" data-translate="Дождь">Дождь</button>
+        <button class="gallery-btn" data-effect="space" data-translate="Космос">Космос</button>
+        <button class="gallery-btn" data-effect="cat" data-translate="Кот">Кот</button>
+        <button class="gallery-btn" data-effect="fireworks" data-translate="Фейерверк">Фейерверк</button>
     </div>
     <div class="gallery-display">
         <img src="https://images.unsplash.com/photo-1496564203457-11bb12075d90?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
@@ -237,41 +263,41 @@
         <div class="player-controls">
             <button class="play-btn">▶</button>
             <input type="range" class="volume-control" min="0" max="1" step="0.1" value="0.7">
-            <span class="current-effect">Город</span>
+            <span class="current-effect" data-translate="Город">Город</span>
         </div>
     </div>
 </div>
       <div id="advantages" class="str5">
-         <img class="lamps" alt="" src="assets/background.png"/>
+         <img class="lamps" alt="" src="background.png"/>
       </div>
-      <p class="preim">
+      <p class="preim" data-translate="Наши преимущества">
          Наши преимущества
       </p>
       <section class="tabl2">
          <div class="punkt" style="height: 48px;">
-            <img class="icon" alt="" src="assets/pc.png" />
-            <p class="punktext" style="margin: 1px 0 0 0;">
+            <img class="icon" alt="" src="pc.png" />
+            <p class="punktext" style="margin: 1px 0 0 0;" data-translate="Сделаем адаптивный дизайн, под любой вид устройств">
                Сделаем адаптивный дизайн, под любой вид устройств
             </p>
          </div>
          <div class="punkt">
-            <img class="icon" alt="" src="assets/search.png" />
-            <p class="punktext" style="height: 72px; margin: 1px 0 0 0;">
+            <img class="icon" alt="" src="search.png" />
+            <p class="punktext" style="height: 72px; margin: 1px 0 0 0;"  data-translate="Установим на сайт счетчики аналитики и настроим возможность отслеживать результаты прямо с вашего мобильного телефона">
                Установим на сайт счетчики аналитики и настроим возможность
                отслеживать результаты прямо с вашего мобильного телефона
             </p>
          </div>
          <div class="punkt">
-            <img class="icon" alt="" src="assets/message.png"/>
-            <p class="punktext" style="height: 96px; margin-top: 1px;">
+            <img class="icon" alt="" src="message.png"/>
+            <p class="punktext" style="height: 96px; margin-top: 1px;" data-translate="Настроим все возможные способы обратной связи. Заявки на почту, подключим онлайн консультанта, настроим телефонный звон с сайта, подключим Whatsapp к сайту">
                Настроим все возможные способы обратной связи. Заявки на почту,
                подключим онлайн консультанта, настроим телефонный звон с сайта,
                подключим Whatsapp к сайту
             </p>
          </div>
          <div class="punkt">
-            <img class="icon" alt="" src="assets/graffic.png" style="margin-top: 22px;"/>
-            <p class="punktext" style="height: 72px; margin-top: 23px;">
+            <img class="icon" alt="" src="graffic.png" style="margin-top: 22px;"/>
+            <p class="punktext" style="height: 72px; margin-top: 23px;" data-translate="Проведем анализ вашей сферы и конкурентов, предложим лучшие инструменты для продвижения в интернете">
                Проведем анализ вашей сферы и конкурентов, предложим лучшие
                инструменты для продвижения в интернете
             </p>
@@ -280,38 +306,38 @@
       <!-- stranica6 -->
       <section id="contact" class="str6">
          <section class="zayavka">
-            <p class="zayav">Заявка
+            <p class="zayav"  data-translate="Заявка">Заявка
             </p>
             <section class="form-container">
-               <p class="form">
+               <p class="form"  data-translate="Ваше имя">
                   Ваше имя
                </p>
                <input class="input"></input>
-               <p class="form">
+               <p class="form"  data-translate="Ваш Email">
                   Ваш Email
                </p>
                <input class="input"></input>
-               <p class="form">
+               <p class="form"  data-translate="Сообщение">
                   Сообщение
                </p>
                <input class="input" type="soobshenie"></input>
             </section>
             <div class="otpravit">
-               <div >Отправить</div>
-               <img class="right-arrow-1-1" alt="" src="assets/right-arrow white.svg" />
+               <div data-translate="Отправить">Отправить</div>
+               <img class="right-arrow-1-1" alt="" src="right-arrow white.svg" />
             </div>
          </section>
-         <section class="predlozh">
-            <p class="spectext">
+          <section class="predlozh">
+            <p class="spectext" data-translate="Спец предложения">
                Спец предложения
             </p>
             <section class="tabl3">
                <div class="ellipse" style="margin-left: 58px;"></div>
-               <div class="yach" onclick="window.location.href='catalog23.html'" style="cursor: pointer;">
-                  <p class="top">
+               <div class="yach">
+                  <p class="top" data-translate="Landing Page">
                      Landing Page
                   </p>
-                  <p class="central" >
+                  <p class="central" data-translate="продающая посадочная страница.">
                      продающая посадочная страница.
                   </p>
                   <p class="notenge">
@@ -322,11 +348,11 @@
                   </p>
                </div>
                <div class="ellipse1" style="margin-left: 262px;"></div>
-               <div class="yach1" onclick="window.location.href='catalog23.html'" style="cursor: pointer;">
-                  <p class="top">
+               <div class="yach1" >
+                  <p class="top"  data-translate="Бизнес сайт">
                      Бизнес сайт
                   </p>
-                  <p class="central" style="margin-bottom: 20px;">
+                  <p class="central" style="margin-bottom: 20px;"  data-translate="Корпоративный сайт">
                      Корпоративный сайт
                   </p>
                   <p class="notenge">
@@ -337,14 +363,14 @@
                   </p>
                </div>
                <div class="ellipse" style="margin-left: 466px;"></div>
-               <div class="yach" onclick="window.location.href='catalog23.html'" style="cursor: pointer;">
-                  <p class="top">
+               <div class="yach">
+                  <p class="top" data-translate="Контекстная реклама">
                      Контекстная реклама
                   </p>
-                  <p class="central" >
+                  <p class="central" data-translate="Запуск контекстной рекламы на месяц">
                      Запуск контекстной рекламы на месяц
                   </p>
-                  <p class="tenge" style="margin-top: 42px;">
+                  <p class="tenge" style="margin-top: 42px;" data-translate="Бесплатно">
                      Бесплатно
                   </p>
                </div>
@@ -356,36 +382,36 @@
          <div class="footer">
             <section class="verh">
                <div class="stolb">
-                  <p class="f1">Пункт</p>
-                  <p class="f2">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
-                  <p class="f3" style="margin-bottom: 21px;">Пункт</p>
-                  <p class="f3">Пункт</p>
+                  <p class="f1" data-translate="Пункт">Пункт</p>
+                  <p class="f2" data-translate="В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
+                  <p class="f3" style="margin-bottom: 21px;" data-translate="Пункт">Пункт</p>
+                  <p class="f3" data-translate="Пункт">Пункт</p>
                </div>
                <div class="stolb">
-                  <p class="f1">Пункт</p>
-                  <p class="f2">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
-                  <p class="f3" style="margin-bottom: 21px;">Пункт</p>
-                  <p class="f3">Пункт</p>
+                  <p class="f1" data-translate="Пункт">Пункт</p>
+                  <p class="f2" data-translate="В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
+                  <p class="f3" style="margin-bottom: 21px;" data-translate="Пункт">Пункт</p>
+                  <p class="f3" data-translate="Пункт">Пункт</p>
                </div>
                <div class="stolb">
-                  <p class="f1">Пункт</p>
-                  <p class="f2">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
-                  <p class="f3" style="margin-bottom: 21px;">Пункт</p>
-                  <p class="f3">Пункт</p>
+                  <p class="f1" data-translate="Пункт">Пункт</p>
+                  <p class="f2" data-translate="В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
+                  <p class="f3" style="margin-bottom: 21px;" data-translate="Пункт">Пункт</p>
+                  <p class="f3" data-translate="Пункт">Пункт</p>
                </div>
                <div class="stolb">
-                  <p class="f11">Контакты</p>
+                  <p class="f11" data-translate="Контакты">Контакты</p>
                   <div class="ff">
-                    <img class="iconfooter" alt="" src="assets/fi_phone-callWHITE.svg" />
+                    <img class="iconfooter" alt="" src="fi_phone-callWHITE.svg" />
                     <p class="f4"> +7 777 7777 77 77</p>
                   </div>
                   <div class="ff">
-                    <img class="iconfooter" alt="" src="assets/fi_mailWHITE.svg" />
-                    <p class="f4"> email@email.ru</p>
+                    <img class="iconfooter" alt="" src="fi_mailWHITE.svg" />
+                    <p class="f4">email@email.ru</p>
                   </div>
                   <div class="ff">
-                    <img class="iconfooter" alt="" src="assets/fi_map-pin.svg" />
-                    <p class="f4"> г. Москва</p>
+                    <img class="iconfooter" alt="" src="fi_map-pin.svg" />
+                    <p class="f4"data-translate="Москва"> г.Москва</p>
                   </div>
                </div>
             </section>
@@ -397,27 +423,27 @@
             <div class="social-slides">
                 <div class="social-slide active">
                     <div class="social-icon">
-                        <img src="assets/telegram 1.svg" alt="Telegram">
+                        <img src="telegram 1.svg" alt="Telegram">
                     </div>
                 </div>
                 <div class="social-slide">
                     <div class="social-icon">
-                        <img src="assets/vk 1.svg" alt="VK">
+                        <img src="vk 1.svg" alt="VK">
                     </div>
                 </div>
                 <div class="social-slide">
                     <div class="social-icon">
-                        <img src="assets/instagram 1.svg" alt="Instagram">
+                        <img src="instagram 1.svg" alt="Instagram">
                     </div>
                 </div>
                 <div class="social-slide">
                     <div class="social-icon">
-                        <img src="assets/fi_mailBLACK.svg" alt="Email">
+                        <img src="fi_mailBLACK.svg" alt="Email">
                     </div>
                 </div>
                 <div class="social-slide">
                     <div class="social-icon">
-                        <img src="assets/fi_phone-callBLACK.svg" alt="Phone">
+                        <img src="fi_phone-callBLACK.svg" alt="Phone">
                     </div>
                 </div>
             </div>
@@ -429,6 +455,7 @@
       </footer>
       <div id="map" style="width: 100%; height: 400px;"></div>
       <script src="9.js"></script>
+      <script src="10.1.js"></script>
       <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API_ключ&lang=ru_RU" type="text/javascript"></script>
    </body>
 <div id="video-modal" class="modal">
@@ -438,10 +465,3 @@
     </div>
 </div>
 </html>
-
-
-
-
-
-
-
