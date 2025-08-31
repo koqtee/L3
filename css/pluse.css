@@ -1,0 +1,633 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+:root {
+    --primary-color: #4e8cff; 
+}
+
+.loader {
+    display: flex;
+    gap: 10px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+.circle:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.circle:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.burger-menu {
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: 353px;
+    z-index: 1000;
+}
+
+.burger-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.burger-icon span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #000;
+    transition: all 0.3s ease;
+}
+
+.burger-nav {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 300px;
+    height: 100vh;
+    background: #1a1f25;
+    padding: 80px 20px;
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.burger-nav a {
+    display: block;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.burger-nav a:hover {
+    color: var(--primary-color);
+}
+
+.burger-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 998;
+}
+
+.burger-active .burger-icon {
+    transform: rotate(90deg);
+}
+
+.burger-active .burger-icon span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.burger-active .burger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-active .burger-icon span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.burger-active .burger-nav {
+    right: 0;
+}
+
+.burger-active .burger-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.burger-active body {
+    overflow: hidden;
+}
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-prev, .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider-prev {
+    left: 10px;
+}
+
+.slider-next {
+    right: 10px;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background: white;
+}
+.media-gallery {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery-btn {
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.gallery-btn:hover {
+    background: var(--secondary-color);
+}
+
+.gallery-display {
+    position: relative;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.play-btn {
+    padding: 5px 15px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.volume-control {
+    width: 100px;
+}
+.video-container {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.video-thumbnail {
+    position: relative;
+    cursor: pointer;
+}
+
+.video-thumb {
+    width: 100%;
+    height: auto;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all 0.3s;
+}
+
+.play-button:hover {
+    background: rgba(255,255,255,0.9);
+}
+
+.video-player {
+    display: none;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    
+    /* Контейнер для параллакса */
+    .parallax-box {
+      position: relative;
+      width: 100%;
+      height: 500px; /* Фиксированная высота контейнера */
+      overflow: hidden;
+      border: 2px solid #333;
+      margin-bottom: 50px;
+    }
+    
+    /* Фоновый слой (не двигается) */
+    .parallax-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b');
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+    
+    /* Первый движущийся слой */
+    .parallax-layer-1 {
+      position: absolute;
+      top: -800px;
+      left: 50px;
+      width: 200px;
+      padding: 20px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 2;
+      transition: transform 0.05s linear;
+    }
+    
+    /* Второй движущийся слой */
+    .parallax-layer-2 {
+    position: absolute;
+      top: 1400px;
+      left: 1300px;
+      width: 200px;
+      padding: 20px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 3;
+      transition: transform 0.05s linear;
+    }
+    
+    /* Контент для создания скролла */
+    .content {
+      height: 1000px;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+/* Добавьте в pluse.css */
+.media-gallery {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+}
+
+.gallery-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery-btn {
+    padding: 10px 20px;
+    background: #4e8cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.gallery-btn:hover {
+    background: #3a6fc8;
+    transform: translateY(-2px);
+}
+
+.gallery-display {
+    position: relative;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.play-btn {
+    padding: 8px 15px;
+    background: #4e8cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.play-btn:hover {
+    background: #3a6fc8;
+}
+
+.volume-control {
+    flex-grow: 1;
+}
+
+.current-effect {
+    color: white;
+    font-weight: 500;
+    min-width: 80px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .gallery-image {
+        height: 300px;
+    }
+    
+    .gallery-controls {
+        gap: 5px;
+    }
+    
+    .gallery-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #000;
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.close-modal {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #ccc;
+}
+/* Стили для слайдера соцсетей */
+.social-slider-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+.social-slider {
+    width: 120px;
+    overflow: hidden;
+}
+
+.social-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.social-slide {
+    min-width: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.social-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.social-prev, .social-next {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+}
+
+.social-prev:hover, .social-next:hover {
+    color: #ccc;
+}
+
+/* Анимация при наведении на иконки */
+.social-icon:hover {
+    transform: translateY(-3px);
+    transition: transform 0.2s ease;
+}
+/* Стили для бесконечного слайдера соцсетей */
+.social-slider-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+    position: relative;
+}
+
+.social-slider {
+    width: 40px; /* Ширина одной иконки */
+    overflow: hidden;
+}
+
+.social-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.social-slide {
+    min-width: 40px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.social-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.social-prev, .social-next {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+}
+
+.social-prev:hover, .social-next:hover {
+    color: #ccc;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

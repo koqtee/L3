@@ -251,8 +251,8 @@ a{
 .header__logo{
     font-family: Montserrat;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 23px;
+    line-height: 23px;
     padding: 0 15px;
 }
 
@@ -812,3 +812,5 @@ a{
 .slick-btn:hover::before {
     filter: brightness(0) invert(1);
 }
+
+
