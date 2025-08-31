@@ -136,7 +136,7 @@
 .burger-active body {
     overflow: hidden;
 }
-.slider {
+.slider1 {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
@@ -630,4 +630,5 @@
 .social-icon:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
