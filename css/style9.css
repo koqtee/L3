@@ -3,6 +3,8 @@
   animation-name: slidein;
 }
 
+
+
 @keyframes slidein {
   from {
     margin-left: 70%;
