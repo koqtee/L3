@@ -329,6 +329,10 @@ body:not(.dark-theme) {
   color: #ffffff;
 }
 
+.dark-theme .backg {
+  filter: brightness(0.6);
+}
+
 .dark-theme .user-name, 
 .dark-theme .user-email {
   color: #ffffff;
@@ -340,3 +344,4 @@ body:not(.dark-theme) {
   color: #fff;
 
 }
+
