@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     companyLogo.addEventListener('click', function() {
         videoModal.style.display = 'block';
-        modalVideo.src = 'https://youtu.be/XFkzRNyygfk?si=vsZFTtxDhcwSQP1I';
+        modalVideo.src = 'https://www.youtube.com/embed/XFkzRNyygfk';
     });
     
     closeModal.addEventListener('click', function() {
@@ -426,3 +426,4 @@ style.textContent = `
 `;
 
 document.head.appendChild(style);
+
