@@ -584,7 +584,7 @@
 }
 
 .social-slide {
-    min-width: 40px;
+    min-width: 30px;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -592,8 +592,8 @@
 }
 
 .social-icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -632,4 +632,5 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
+
 
